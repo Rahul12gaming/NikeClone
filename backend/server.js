@@ -69,11 +69,7 @@ const PASSWORD=process.env.DB_PASSWORD;
 const port=process.env.PORT||6000;
 
 dataBase(PASSWORD)
- app.use(express.static(path.resolve(__dirname,"../client/build")))
-app.get('/',(req,res)=>{
  
-  res.sendFile(path.resolve(__dirname,"../client/build/index.html"))
-})
 app.listen(port,()=>{
     console.log("server started");
 })
