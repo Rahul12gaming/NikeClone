@@ -13,14 +13,12 @@
     "mongoose": "^6.9.0",
     "razorpay": "^2.8.6"
   },
-  "devDependencies": {},
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
     "build":"npm i",
     "dev":"node server.js",
   },
-  "type": "module",
+  
   "author": "",
   "license": "ISC"
 }
