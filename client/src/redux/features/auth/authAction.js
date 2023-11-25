@@ -22,7 +22,7 @@ import { setToast } from '../../../utils/extraFunctions.js';
   
   export const getSignupSuccess = (data, toast, navigate) => async (dispatch) => {
     try {
-      let res = await axios.post(`http://localhost:8000/singup`, data);
+      let res = await axios.post(`https://nikebackend-9173.onrender.com/singup`, data);
       res=res.data
       dispatch(getToken(res));
       setItem("token", res.token);
@@ -43,7 +43,7 @@ import { setToast } from '../../../utils/extraFunctions.js';
   
   export const getLoginSuccess = (data, toast, navigate) => async (dispatch) => {
     try {
-      let res = await axios.post(`/users/login`, data);
+      let res = await axios.post(`https://nikebackend-9173.onrender.com/users/login`, data);
       res = res.data;
       console.log(res);
       dispatch(getToken(res));
