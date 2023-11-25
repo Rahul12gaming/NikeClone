@@ -7,7 +7,7 @@ export const getDataSuccess=(payload)=>({type:GET_PRODUCT_SUCCESS,payload})
 export const getRequest=(path)=>async(dispatch)=>{
     try{
         dispatch(getDataLoading())
-        const {data}=await axios.get(`http://localhost:8000/${path}`)
+        const {data}=await axios.get(`https://nikebackend-9173.onrender.com/${path}`)
         dispatch(getDataSuccess(data))
     }
     catch(err){
