@@ -8,7 +8,7 @@ export const getData=()=>async(dispatch)=>
     try
     {
         dispatch(ShowLoading())
-        const res=await axios.get('http://localhost:8000/cloth')
+        const res=await axios.get('https://nikebackend-9173.onrender.com/cloth')
         dispatch(showData(res.data))
     }
     catch(err)
